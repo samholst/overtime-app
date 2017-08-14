@@ -1,5 +1,5 @@
 1.times do |user|
-  User.create!(first_name: "Sam", last_name: "Holst", email: "myemail@email.com", password: "asdfasdf", password_confirmation: "asdfasdf")
+  User.create!(first_name: "Sam", last_name: "Holst", email: "test@test.com", password: "asdfasdf", password_confirmation: "asdfasdf")
 end
 
 100.times do |post|
