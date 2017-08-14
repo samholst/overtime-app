@@ -1,3 +1,19 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "posts.scss";
+
+body {
+  background-color: #eee;
+}
+
+.custom-nav {
+  margin-top: 15px;
+}
+
+.main-row {
+  background-color: white;
+}
+
+.jumbotron {
+  margin-top: 10px;
+}
