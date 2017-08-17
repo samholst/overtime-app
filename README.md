@@ -25,3 +25,4 @@
 - Add full_name method for users
 - Refactor posts/form for admin user list status
 - Fix post_spec.rb:82 to use factories
+- Fix post_spec.rb:52 to have correct user reference and not require update
