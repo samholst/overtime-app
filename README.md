@@ -23,4 +23,5 @@
 ## Refactor TODOS:
 - Refactor user association in post_spec
 - Add full_name method for users
-- Refactor posts/_form for admin user list status
+- Refactor posts/form for admin user list status
+- Fix post_spec.rb:82 to use factories
