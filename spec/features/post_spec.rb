@@ -87,11 +87,12 @@ describe 'navigate' do
 
     it 'can be edited' do
       visit edit_post_path(@edit_post)
+
       fill_in 'post[date]', with: Date.today
-      fill_in 'post[rationale]', with: "Edit mo' money!"
+      fill_in 'post[rationale]', with: "Edited content"
       click_on "Save"
 
-      expect(page).to have_content("Edit mo' money!")
+      expect(page).to have_content("Edited content")
     end
 
     it 'cannot be edited by a non authorized user' do
