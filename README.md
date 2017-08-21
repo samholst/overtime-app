@@ -27,3 +27,4 @@
 - Refactor posts/form for admin user list status
 - x Fix post_spec.rb:82 to use factories
 - x Fix post_spec.rb:52 to have correct user reference and not require update
+- Integrate validation for phone attribute in user
