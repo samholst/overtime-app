@@ -32,7 +32,7 @@ describe 'navigate' do
     end
 
     it 'has a scope so that only post creators can see their posts' do
-      other_user = User.create(first_name: 'Non',last_name: 'Authorized',email: "other_user@test.com", password: 'asdfasdf', password_confirmation: 'asdfasdf')
+      other_user = User.create(first_name: 'Non',last_name: 'Authorized',email: "other_user@test.com", password: 'asdfasdf', password_confirmation: 'asdfasdf', phone: "7023358019")
       post_from_other_user = Post.create(date: Date.today, rationale: "Should not be seen!", user_id: other_user.id, overtime_request: 2.5)
 
       visit posts_path
@@ -93,7 +93,7 @@ describe 'navigate' do
 
   describe 'edit' do
     before do
-      @edit_user = User.create(first_name: "asdf", last_name: "asdf", email: "asdfasdf@asdf.com", password: "asdfasdf", password_confirmation: "asdfasdf")
+      @edit_user = User.create(first_name: "asdf", last_name: "asdf", email: "asdfasdf@asdf.com", password: "asdfasdf", password_confirmation: "asdfasdf", phone: "7023358019")
       login_as(@edit_user, :scope => :user)
       @edit_post = Post.create(date: Date.today, rationale: "asdf", user_id: @edit_user.id, overtime_request: 2.5)
     end

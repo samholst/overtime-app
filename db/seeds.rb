@@ -1,8 +1,18 @@
-@normal = User.create!(first_name: "Sam", last_name: "Holst", email: "test@test.com", password: "asdfasdf", password_confirmation: "asdfasdf")
+@normal = User.create!(first_name: "Sam",
+                       last_name: "Holst",
+                       email: "test@test.com",
+                       password: "asdfasdf",
+                       password_confirmation: "asdfasdf",
+                       phone: "7025000195")
 
 puts "1 user created"
 
-@admin = User.create!(first_name: "Sam", last_name: "Holst", email: "admintest@test.com", password: "asdfasdf", password_confirmation: "asdfasdf", type: "AdminUser")
+@admin = AdminUser.create!(first_name: "Sam",
+                           last_name: "Holst",
+                           email: "admintest@test.com",
+                           password: "asdfasdf",
+                           password_confirmation: "asdfasdf",
+                           phone: "7025000195")
 
 puts "1 admin created"
 
