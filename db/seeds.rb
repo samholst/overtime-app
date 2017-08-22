@@ -8,7 +8,7 @@
 puts "1 user created"
 
 @admin = AdminUser.create!(first_name: "Sam",
-                           last_name: "Holst",
+                           last_name: "Admin",
                            email: "admintest@test.com",
                            password: "asdfasdf",
                            password_confirmation: "asdfasdf",
@@ -22,3 +22,9 @@ puts "1 admin created"
 end
 
 puts "10 posts have been created"
+
+50.times do |audit_log|
+  AuditLog.create!(user_id: User.last.id, status: 0, start_date: (Date.today - 6.days))
+end
+
+puts "50 audit logs have been created"
