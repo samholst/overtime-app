@@ -15,6 +15,16 @@
 - x Block non admin and guest users for dashboard
 - Email summary to managers for approval
 - Needs to be documented if employee did not log overtime
+- Need to update end_date when confirmed
+- Need to update audit log status when an overtime rejected
+- x Home Icon
+- Update buttons to be mobile responsive
+- Update date time span
+- Update button sort order on employee homepage
+- Remove unnecessary nav bar items for managers
+- fix admin dashboard error
+- Implement HoneyBadger error reporting
+- Implement new Relic for keeping the site alive
 
 ## UI:
 - x Bootstrap -> formatting
