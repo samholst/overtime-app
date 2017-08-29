@@ -1,9 +1,9 @@
-@normal = User.create!(first_name: "Sam",
+@normal = Employee.create!(first_name: "Sam",
                        last_name: "Holst",
                        email: "test@test.com",
                        password: "asdfasdf",
                        password_confirmation: "asdfasdf",
-                       phone: "7025000195")
+                       phone: ENV["MY_PHONE_NUMBER"])
 
 puts "1 user created"
 
@@ -12,7 +12,7 @@ puts "1 user created"
                            email: "admintest@test.com",
                            password: "asdfasdf",
                            password_confirmation: "asdfasdf",
-                           phone: "7025000195")
+                           phone: ENV["MY_PHONE_NUMBER"])
 
 puts "1 admin created"
 
