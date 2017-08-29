@@ -5,9 +5,9 @@
 <% if current_user %>
   <ul class="nav nav-tabs custom-nav">
     <li class="<%= active?(root_path) %>"><%= link_to '', root_path, class: 'glyphicon glyphicon-home' %></li>
+    
     <%= render 'shared/audit_log_tab' if admin? %>
     <%= render 'shared/employee_nav_items' if employee? %>
-
 
     <li class="dropdown pull-right">
        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Settings<strong class="caret"></strong></a>

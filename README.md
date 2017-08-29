@@ -21,7 +21,7 @@
 - x Update buttons to be mobile responsive
 - x Update button date time span
 - x Update button sort order on employee homepage
-- Remove unnecessary nav bar items for managers
+- x Remove unnecessary nav bar items for managers
 - fix admin dashboard error
 - Implement HoneyBadger error reporting
 - Implement new Relic for keeping the site alive
